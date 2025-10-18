@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "flutter_compass",
+    "type": "har",
+    "deviceTypes": [
+      "phone"
+    ]
+  }
+}

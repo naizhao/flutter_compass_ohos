@@ -1,3 +1,10 @@
+## 0.8.2 (Unreleased)
+* Add HarmonyOS (OpenHarmony) platform support
+* Implement compass functionality using @ohos.sensor API
+* Support ORIENTATION and ROTATION_VECTOR sensors on HarmonyOS
+* Add low-pass filter for smooth heading data
+* Include comprehensive implementation documentation
+
 ## 0.8.1
 * Bump the compileSdkVersion to 34 to support Android 14
 * Support the AGP >= 8

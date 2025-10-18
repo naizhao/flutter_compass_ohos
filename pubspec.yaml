@@ -23,6 +23,9 @@ flutter:
         pluginClass: FlutterCompassPlugin
       ios:
         pluginClass: FlutterCompassPlugin
+      ohos:
+        packageName: com.hemanthraj.fluttercompass
+        pluginClass: FlutterCompassPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

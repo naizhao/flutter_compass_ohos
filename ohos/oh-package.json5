@@ -1,0 +1,9 @@
+{
+  "name": "flutter_compass",
+  "version": "0.8.1",
+  "description": "A Flutter compass plugin for HarmonyOS",
+  "main": "./src/main/ets/Index.ets",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
