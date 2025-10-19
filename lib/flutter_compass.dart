@@ -51,7 +51,14 @@ class FlutterCompass {
     }
     _stream ??= _compassChannel
         .receiveBroadcastStream()
-        .map((dynamic data) => CompassEvent.fromList(data?.cast<double>()));
+        .map((dynamic data) {
+          if (data == null) return CompassEvent.fromList(null);
+          // 手动转换每个元素为 double，支持 int 和 double 类型
+          final List<double> converted = (data as List)
+              .map((e) => (e as num).toDouble())
+              .toList();
+          return CompassEvent.fromList(converted);
+        });
     return _stream;
   }
 }

@@ -154,7 +154,8 @@ export class FlutterCompassPlugin implements FlutterPlugin, StreamHandler {
     // heading: 当前方向角度（0-360，0为北）
     // cameraHeading: 相机模式下的方向（与heading相同）
     // accuracy: 精度（鸿蒙传感器精度，设为 15 表示高精度）
-    const result = [heading, heading, 15.0];
+    // 确保所有值都是浮点数类型，避免 Dart 端类型转换错误
+    const result = [Number(heading), Number(heading), 15.0];
 
     this.eventSink.success(result);
     this.lastHeading = heading;
@@ -193,7 +194,8 @@ export class FlutterCompassPlugin implements FlutterPlugin, StreamHandler {
     // 平滑处理
     heading = this.smoothHeading(heading);
 
-    const result = [heading, heading, 15.0];
+    // 确保所有值都是浮点数类型，避免 Dart 端类型转换错误
+    const result = [Number(heading), Number(heading), 15.0];
     this.eventSink.success(result);
     this.lastHeading = heading;
   }

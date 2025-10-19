@@ -1,4 +1,5 @@
 {
+  "modelVersion": "5.0.0",
   "name": "flutter_compass",
   "version": "0.8.1",
   "description": "A Flutter compass plugin for HarmonyOS",
